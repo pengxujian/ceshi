@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>金</h1>
+    <button id="btn">点我</button>
+    <script>
+        document.getElementById('btn').onclick = function() {
+            setTimeout(() => {
+                console.log(this);
+            },1000)
+        }
+    </script>
 </body>
 </html>
